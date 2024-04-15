@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { CommandMenu } from "@/components/command-menu";
 import { Metadata } from "next";
 import { Section } from "@/components/ui/section";
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { MailIcon, PhoneIcon, LinkIcon, MapPinIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
@@ -24,17 +24,19 @@ export default function Page() {
             <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
               {RESUME_DATA.about}
             </p>
-            <p className="max-w-md items-center text-pretty font-mono text-xs text-muted-foreground">
-              <a
-                className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
-                href={RESUME_DATA.locationLink}
-                target="_blank"
-              >
-                <GlobeIcon className="size-3" />
-                {RESUME_DATA.location}
-              </a>
-            </p>
             <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
+							{RESUME_DATA.locationLink ? (
+                <Button
+                  className="size-8"
+                  variant="outline"
+                  size="icon"
+                  asChild
+                >
+                  <a href={RESUME_DATA.locationLink} target="_blank">
+                    <MapPinIcon className="size-4" />
+                  </a>
+                </Button>
+              ) : null}
               {RESUME_DATA.contact.email ? (
                 <Button
                   className="size-8"
@@ -72,16 +74,42 @@ export default function Page() {
                   </a>
                 </Button>
               ))}
+							{RESUME_DATA.personalWebsiteUrl ? (
+                <Button
+                  className="size-8"
+                  variant="outline"
+                  size="icon"
+                  asChild
+                >
+                  <a href={RESUME_DATA.personalWebsiteUrl} target="_blank">
+                    <LinkIcon className="size-4" />
+                  </a>
+                </Button>
+              ) : null}
             </div>
             <div className="hidden flex-col gap-x-1 font-mono text-sm text-muted-foreground print:flex">
+							{RESUME_DATA.location ? (
+                <a href={RESUME_DATA.locationLink} target="_blank">
+									地址：
+                  <span className="underline">{RESUME_DATA.location}</span>
+                </a>
+              ) : null}
               {RESUME_DATA.contact.email ? (
                 <a href={`mailto:${RESUME_DATA.contact.email}`}>
+									邮箱：
                   <span className="underline">{RESUME_DATA.contact.email}</span>
                 </a>
               ) : null}
               {RESUME_DATA.contact.tel ? (
                 <a href={`tel:${RESUME_DATA.contact.tel}`}>
+									电话：
                   <span className="underline">{RESUME_DATA.contact.tel}</span>
+                </a>
+              ) : null}
+              {RESUME_DATA.personalWebsiteUrl ? (
+                <a href={RESUME_DATA.personalWebsiteUrl} target="_blank">
+									博客：
+                  <span className="underline">{RESUME_DATA.personalWebsiteUrl}</span>
                 </a>
               ) : null}
             </div>
