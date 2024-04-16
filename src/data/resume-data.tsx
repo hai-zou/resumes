@@ -1,4 +1,4 @@
-import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { GitHubIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
   name: "邹海",
@@ -48,7 +48,7 @@ export const RESUME_DATA = {
     "Node.js",
   ],
 	skillDetails: [
-		"熟练掌握HTML5，CSS3，ES6",
+		"熟练掌握 HTML5，CSS3 的基本使用以及常用的响应式布局的最佳实践",
 		"掌握Vue和Angular框架的基本使用",
 		"掌握Element、Ant Desgin、Material等UI框架的使用",
 		"掌握Typescript技术、并用于实际开发",
@@ -60,25 +60,15 @@ export const RESUME_DATA = {
     {
       title: "Noc 组件库",
 			link: "",
-      techStack: ["Angular", "TypeScript"],
-      description: "前端UI组件库，提供基础组件，帮助网站快速成型",
+      techStack: ["Angular", "TypeScript", "Rxjs", "SvgToFont", "Markdown"],
+      description: "公司内部前端UI组件库，提供基础组件，帮助网站快速成型",
 			contents: [
 				"开发了9个组件，每个组件单元测试覆盖率达到90%",
 				"负责搭建组件库文档站点，以markdown形式展示",
 				"编写字体图标发布脚本，将打包后的字体图标上传到CDN服务",
 			],
     },
-    {
-      title: "活动平台",
-			link: "",
-      techStack: ["React"],
-      description: "低代码平台，以少量代码快速搭建活动页面",
-			contents: [
-				"基于H5-Dooring二次开发，搭建活动平台，通过拖拽生成H5活动页面",
-				"开发九宫格抽奖组件，通过修改配置来更换奖品",
-			],
-    },
-    {
+		{
       title: "内容中台",
 			link: "",
       techStack: ["Angular"],
@@ -87,7 +77,18 @@ export const RESUME_DATA = {
 				"参与版本的迭代开发与日常维护工作",
 				"编写文案替换脚本，将项目的中文导出到Excel表格，翻译成英文后再写入项目，提升了研发效率",
 				"负责接入权限系统，控制角色能够访问的页面和可操作的按钮",
-				"解决了由于资源上传至CDN而导致页面baseURL错误问题",
+				"性能优化：资源上传至CDN / 公共接口数据缓存 / 代码优化等，页面访问速度提升40%",
+				"代码重构"
+			],
+    },
+    {
+      title: "活动平台",
+			link: "",
+      techStack: ["React", "Antd"],
+      description: "低代码平台，以少量代码快速搭建活动页面",
+			contents: [
+				"基于H5-Dooring二次开发，搭建活动平台，通过拖拽生成H5活动页面",
+				"开发九宫格抽奖组件，通过修改配置来更换奖品",
 			],
     },
   ],
