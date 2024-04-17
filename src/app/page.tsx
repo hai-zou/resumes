@@ -160,7 +160,16 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs whitespace-pre">
-                  {work.description}
+									<ul className="text-xs mt-2">
+										{work.description.map((desItem) => (
+											<li
+												className="list-decimal ml-5"
+												key={desItem}
+											>
+												{desItem}
+											</li>
+										))}
+									</ul>
                 </CardContent>
               </Card>
             );
