@@ -7,8 +7,8 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/ganzhou",
   about: "Web前端开发工程师 | 三年经验",
   summary: "工作认真踏实，积极热情。性格开朗随和，具备良好的沟通能力和团队协作能力。具备良好的编码习惯，以及分析问题解决问题的能力。",
-  avatarUrl: "https://image.luckyzh.cn/user/avatar.jpg",
-  personalWebsiteUrl: "https://www.luckyzh.cn",
+  avatarUrl: "https://imgs.izou.top/user/avatar.jpg",
+  personalWebsiteUrl: "https://izou.top",
   contact: {
     email: "zou.hai@outlook.com",
     tel: "17779036853",
