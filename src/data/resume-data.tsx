@@ -5,8 +5,8 @@ export const RESUME_DATA = {
   initials: "ZH",
   location: "江西赣州",
   locationLink: "https://www.google.com/maps/place/ganzhou",
-  about: "Web前端开发工程师 | 三年经验",
-  summary: "工作认真踏实，积极热情。性格开朗随和，具备良好的沟通能力和团队协作能力。具备良好的编码习惯，以及分析问题解决问题的能力。",
+  about: "Web前端开发工程师",
+  summary: "具备三年Web前端开发经验，熟悉HTML、CSS、JavaScript及主流前端框架（如Vue、React等）。能够独立完成从设计到开发的全流程，具有敏捷开发经验。具备优秀的团队协作能力和代码优化经验，致力于提供高效、用户友好的Web解决方案。",
   avatarUrl: "https://imgs.izou.top/user/avatar.jpg",
   personalWebsiteUrl: "https://izou.top",
   contact: {
@@ -39,7 +39,8 @@ export const RESUME_DATA = {
       description: [
 				"根据产品原型图和ui设计稿完成需求开发",
 				"配合后端完成接口联调，保证项目正常上线",
-				"项目维护，解决用户在项目过程中所遇到的问题"
+				"项目维护，解决用户在项目过程中所遇到的问题",
+				"持续优化代码结构，提升前端代码的可维护性，重构了部分遗留代码，减少了技术债务。"
 			],
     },
   ],
@@ -82,7 +83,8 @@ export const RESUME_DATA = {
 				"编写文案替换脚本，将项目的中文导出到Excel表格，翻译成英文后再写入项目，提升了研发效率",
 				"负责接入权限系统，控制角色能够访问的页面和可操作的按钮",
 				"性能优化：资源上传至CDN / 公共接口数据缓存 / 代码优化等，页面访问速度提升40%",
-				"代码重构"
+				"代码重构",
+				"接入AI翻译，自动化"
 			],
     },
     {
