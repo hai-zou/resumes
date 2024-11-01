@@ -142,10 +142,10 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs whitespace-pre">
-									<ul className="text-xs mt-2">
+									<ul className="text-xs mt-2 w-full overflow-hidden">
 										{work.description.map((desItem) => (
 											<li
-												className="list-decimal ml-5"
+												className="list-disc ml-4"
 												key={desItem}
 											>
 												{desItem}
@@ -184,7 +184,7 @@ export default function Page() {
 					<ul className="text-xs text-gray-500">
 						{RESUME_DATA.skillDetails.map((detailItem) => (
 							<li
-								className="list-disc ml-5"
+								className="list-disc ml-4"
 								key={detailItem}
 							>
 								{detailItem}

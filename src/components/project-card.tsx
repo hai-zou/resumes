@@ -47,7 +47,7 @@ export function ProjectCard({ title, description, tags, link, contents }: Props)
 					<ul className="text-xs mt-2">
 						{contents?.map((content) => (
 							<li
-								className="list-decimal ml-5"
+								className="list-disc ml-4"
 								key={content}
 							>
 								{content}
