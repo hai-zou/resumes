@@ -116,7 +116,7 @@ export default function Page() {
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      <a className="hover:underline" href={work.link}>
+                      <a className="hover:underline" href={work.link} target="_blank">
                         {work.company}
                       </a>
 
@@ -141,8 +141,8 @@ export default function Page() {
                     {work.title}
                   </h4>
                 </CardHeader>
-                <CardContent className="mt-2 text-xs whitespace-pre">
-									<ul className="text-xs mt-2 w-full overflow-hidden">
+                <CardContent className="mt-2 text-xs">
+									<ul className="text-xs mt-2">
 										{work.description.map((desItem) => (
 											<li
 												className="list-disc ml-4"
