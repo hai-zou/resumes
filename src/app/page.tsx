@@ -22,7 +22,7 @@ export default function Page() {
           <div className="flex-1 space-y-1.5">
             <h1 className="text-2xl font-bold">{RESUME_DATA.name}</h1>
             <p className="max-w-md text-pretty font-mono text-sm text-muted-foreground">
-              {RESUME_DATA.about}
+              {RESUME_DATA.about} | {RESUME_DATA.experience}
             </p>
             <div className="flex gap-x-1 pt-1 font-mono text-sm text-muted-foreground print:hidden">
 							{RESUME_DATA.locationLink ? (

@@ -6,7 +6,8 @@ export const RESUME_DATA = {
   initials: "ZH",
   location: "江西赣州",
   locationLink: "https://www.google.com/maps/place/ganzhou",
-  about: "Web 前端开发工程师 | 三年经验",
+  about: "Web 前端开发工程师",
+  experience: "三年经验",
   summary: "能够独立完成从设计到开发的全流程，具有敏捷开发经验。具备优秀的团队协作能力和代码优化经验，致力于提供高效、用户友好的 Web 解决方案。",
   avatarUrl: "/avatar.png",
   personalWebsiteUrl: "https://blog.izou.top",
@@ -115,7 +116,6 @@ export const RESUME_DATA = {
       techStack: ["React/Next.js", "Antd Mobile", "JSBridge"],
       description: "一个通过 WebView 嵌入到 APP 中的 H5 页面，旨在为用户提供便捷的产品订阅服务。",
       contents: [
-        "交互设计：提供直观的订阅流程，包括产品选择、支付确认和订阅状态查看，提升用户体验。",
         "与原生 APP 联调：与原生开发团队合作，利用桥接技术实现 H5 与 APP 端的数据交互。",
         "A/B 测试：对订阅页面进行多版本测试，优化订阅文案与页面布局，提高转化率约15%。",
       ],
