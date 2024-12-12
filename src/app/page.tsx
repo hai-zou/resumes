@@ -109,6 +109,24 @@ export default function Page() {
           </Avatar>
         </div>
         <Section>
+          <h2 className="text-xl font-bold">专业技能</h2>
+          <div className="flex flex-wrap gap-1">
+            {RESUME_DATA.skills.map((skill) => {
+              return <Badge key={skill}>{skill}</Badge>;
+            })}
+          </div>
+					<ul className="text-xs text-gray-500">
+						{RESUME_DATA.skillDetails.map((detailItem) => (
+							<li
+								className="list-disc ml-4"
+								key={detailItem}
+							>
+								{detailItem}
+							</li>
+						))}
+					</ul>
+        </Section>
+        <Section>
           <h2 className="text-xl font-bold">工作经历</h2>
           {RESUME_DATA.work.map((work) => {
             return (
@@ -173,24 +191,6 @@ export default function Page() {
               );
             })}
           </div>
-        </Section>
-        <Section>
-          <h2 className="text-xl font-bold">专业技能</h2>
-          <div className="flex flex-wrap gap-1">
-            {RESUME_DATA.skills.map((skill) => {
-              return <Badge key={skill}>{skill}</Badge>;
-            })}
-          </div>
-					<ul className="text-xs text-gray-500">
-						{RESUME_DATA.skillDetails.map((detailItem) => (
-							<li
-								className="list-disc ml-4"
-								key={detailItem}
-							>
-								{detailItem}
-							</li>
-						))}
-					</ul>
         </Section>
         <Section>
           <h2 className="text-xl font-bold">教育经历</h2>
